@@ -13,7 +13,7 @@ function performOperations() {
   var result = document.getElementById("result");
   var operator = document.getElementById("operator").value;
   // Check if the input values are valid.
-  if (isNaN(num1) || isNaN(num2)) {
+  if (!isNaN(num1) || !isNaN(num2)) {
     result.textContent = "Please enter valid numbers!";
   }
   if (operator === "") {
